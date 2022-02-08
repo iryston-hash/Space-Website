@@ -1,0 +1,145 @@
+$main-color: rgba(203, 14, 14, 1)
+
+.header
+    background: url(../images/headerbg.jpg) center (center/cover) no-repeat
+    &__inner
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        min-height: 100vh
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 75px 0 30px
+.menu
+    &__list
+        display: flex
+    &__item
+        display: flex
+        justify-content: start
+        margin-right: 30px
+    &__link
+        text-transform: uppercase
+        font-size: 18px
+        line-height: 21px
+        &:hover
+            color: $main-color
+
+.phone
+    font-size: 24px
+    line-height: 30px
+    &:hover
+        color: $main-color
+
+.login
+    margin-left: 22px
+    margin-right: 134px
+    border: none
+    background: none
+    &:hover
+        border: none
+        background: none
+        cursor: pointer
+
+.header__content
+    max-width: 600px
+.header__title
+    display: flex
+    flex-direction: column
+    font-family: FiraSans-bold
+    font-size: 60px
+    font-weight: 400
+    line-height: 60px
+    background: #000000
+    background: radial-gradient(ellipse farthest-side at top left, #B034CF 1%, #CF1512 35%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    text-shadow: 1px 4px 15px rgba(189, 3, 206, 0.5)
+    & span
+        text-transform: uppercase
+        font-size: 110px
+        line-height: 116px
+        background: #121FCF
+        background: radial-gradient(ellipse farthest-side at bottom right, #121FCF 70%, #CF1512 110%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        text-shadow: 1px 4px 15px rgba(189, 3, 206, 0.5)
+.header__text
+    font-size: 24px
+    line-height: 18px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    text-shadow: 4px 4px 10px rgba(189, 3, 206, 0.616)
+    margin-bottom: 50px
+    &:nth-child(2)
+        margin-right: 100px
+.header__btn
+    border: 1px solid #fff 
+    text-transform: uppercase
+    font-size: 24px
+    line-height: 29px
+    text-align: center
+    width: 100%
+    padding: 15px 10px 16px
+    border-radius: 10px
+    text-shadow: 4px 4px 10px rgba(189, 3, 206, 0.616)
+    &:hover
+        background: rgba(1, 1, 1, 0.603)
+        border: 1px solid black
+        text-shadow: 2px 2px 20px rgb(189, 3, 206)
+        
+.header__description
+    display: flex
+    justify-content: end
+    margin-top: 15px
+    margin-bottom: 5%
+    &-text
+        width: 165px
+        font-size: 14px
+        line-height: 20px
+        & + .header__description-text
+            margin-left: 50px
+       
+.gradline
+    height: 5px
+    background: linear-gradient(278deg, #d300df, #4300dfd3,)
+    background-size: 600% 600%
+    animation: gradline 12s ease infinite
+@keyframes gradline
+    0%
+        background-position:0% 47%
+    50%
+        background-position:100% 54%
+    100%
+        background-position:0% 47%
+// burger
+.menu-btn
+    display: none
+    width: 40px
+    border: none
+    padding: 0
+    position: relative
+    z-index: 20
+    &:hover
+        background: transparent
+        border: none
+.menu-btn span
+    display: block
+    width: 40px
+    height: 2px
+    background-color: #fff
+    position: relative
+.menu-btn span::before,
+.menu-btn span::after
+    content: ''
+    width: 40px
+    height: 2px
+    background-color: #fff
+    position: absolute
+    left: 0
+.menu-btn span::before
+    top: -10px
+.menu-btn span::after
+    top: 10px

@@ -1,0 +1,34 @@
+.footer
+    background: url(../images/footer.webp) center (center/cover) no-repeat
+    min-height: 300px
+    padding: 100px 0 150px
+    position: relative
+    &__inner
+        display: flex
+        justify-content: end
+    &__text
+        width: 165px
+        margin-right: 50px
+        & p + p
+            margin-top: 50px
+    &__menu
+        width: 120px
+        margin-right: 65px
+        &-item
+            margin-bottom: 20px
+    &__links
+        width: 165px
+        &-item
+            margin-bottom: 20px
+.footer__menu-link,
+.footer__links-link
+    text-transform: uppercase
+.copyright
+    display: flex
+    position: absolute
+    justify-content: center
+    width: 100%
+    right: 50%
+    left: 50%
+    bottom: 0
+    transform: translate(-50%, -50%)

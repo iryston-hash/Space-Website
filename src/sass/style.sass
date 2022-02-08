@@ -1,0 +1,94 @@
+@import 'blocks/_header'
+@import 'blocks/_main'
+@import 'blocks/_how'
+@import 'blocks/_booking'
+@import 'blocks/_special'
+@import 'blocks/_services'
+@import 'blocks/_slider'
+@import 'blocks/_contacts'
+@import 'blocks/_footer'
+@import 'blocks/_media'
+@import 'blocks/_page-up'
+
+
+
+@font-face 
+    font-family: 'FiraSans-Regular'
+    src: url('../fonts/FiraSans-Regular.woff2') format('woff2')
+    src: url('../fonts/FiraSans-Regular.woff') format('woff')
+    font-style: normal
+    font-weight: normal
+    font-display: swap
+@font-face 
+    font-family: 'FiraSans-bold'
+    src: url('../fonts/FiraSans-bold.woff2') format('woff2')
+    src: url('../fonts/FiraSans-bold.woff') format('woff')
+    font-style: normal
+    font-weight: bold
+    font-display: swap  
+    
+
+
+*,
+    ::before,
+    ::after
+    box-sizing: border-box    
+html
+    padding: 0
+    margin: 0
+    scroll-behavior: smooth
+body
+    font-family: FiraSans-Regular
+    font-size: 16px
+    line-height: 19px
+    font-weight: 400
+    padding: 0
+    color: #fff 
+h2,h3,h4
+    padding: 0
+    margin: 0
+
+ul  
+    margin: 0
+    list-style-type: none
+a
+    color: inherit
+    text-decoration: none
+    transition: .4s
+    &:hover
+        color: red
+button
+    border: 1px solid #fff
+    border-radius: 10px
+    background: transparent
+    cursor: pointer
+    color: inherit
+    transition: .4s
+    text-transform: uppercase
+    font-size: 18px
+    line-height: 21px
+    padding: 15px 35px
+    &:hover
+        background: rgba(1, 1, 1, 0.603)
+        border: 1px solid black
+        text-shadow: 2px 2px 20px rgb(189, 3, 206)
+p
+    text-shadow: 1px 2px black
+    
+.container
+    max-width: 1220px
+    margin-left: auto
+    margin-right: auto
+    padding-left: 10px
+    padding-right: 10px
+
+.title
+    font-family: FiraSans-bold
+    font-size: 48px
+    line-height: 48px
+    padding: 100px 0
+    background: #121FCF
+    background: radial-gradient(ellipse farthest-side at bottom right, #121FCF 90%, #CF1512 110%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    text-shadow: 1px 1px 8px rgba(189, 3, 206, 0.5)
