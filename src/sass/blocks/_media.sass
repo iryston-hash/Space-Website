@@ -1,6 +1,7 @@
 @media ( max-width: 1270px)
     .title
         text-align: center
+        padding: 20px
     .about
         display: block
         margin: 0 auto
@@ -10,13 +11,18 @@
             display: block
             margin: 0 auto
             margin-bottom: 40px
-        &__content 
+        &__content
             display: block
             margin: 0 auto
             padding: 0
     .how__box svg
         width: 800px
-
+    .footer__inner
+        justify-content: center
+    .footer__text
+        margin-right: 10px
+    .footer__menu
+        margin-right: 10px
 @media (max-width: 1100px)
     .how__title.title
         padding-bottom: 0
@@ -24,12 +30,14 @@
         width: 600px
         margin-left: -90px
         padding-bottom: 100px
-           
+
 @media (max-width: 1024px)
+    .title
+        padding: 20px
     .login
         margin-right: 0
         padding: 0
-    .menu__list 
+    .menu__list
         display: none
     .menu-btn
         display: block
@@ -77,7 +85,85 @@
         display: block
         margin-left: 0
         margin-top: 20px
+
+    .special__offer-box
+        padding-bottom: 10px
+        padding-right: 10px
+        padding-left: 10px
+        padding-top: 10px
+        width: 272px
+        min-height: 300px
+    .special__offer-box + .special__offer-box
+        margin-right: 0px
+
+    .special__offer-new-price
+        font-size: 36px
+
+    .special__offer-item button
+        max-width: 150px
+        margin-left: 60px
+
+    .special__offer-item:first-child
+        margin-left: 80px
+        padding-right: 10px
+        @media  ( max-width: 840px )
+    .button__avatar::before
+        bottom: 50px
+    .book__text
+        max-width: 600px
+        margin: 0
+        padding: 0
+        margin-bottom: 60px
+    h2
+        width: 340px !important
+
+@media ( max-width: 690px )
+    .book__inner
+        flex-direction: column
+    .book__text
+        max-width: auto
+
+    .special__inner
+        display: block
+    .special__offer-item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+        max-width: 270px
+    .special__offer-item:first-child
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+        max-width: 260px
+    .special__offer-box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    .special__offer-item button
+        max-width: max-content
+        margin-bottom: 7%
+        margin-left: 0
+    .services__inner
+        flex-direction: column
+        align-items: center
+    .services__box-list
+        width: auto
+        margin-right: 0
+    .services__buttons
+        max-width: 320px
+        margin-top: 120px
+    .button__avatar::before
+        bottom: 50px
+
 @media ( max-width: 660px )
+    .title
+        font-size: 36px !important
     .about__table
         text-align: center
         width: 540px
@@ -86,9 +172,6 @@
         margin-bottom: 27px
     .how__box svg
         width: 500px
-     
-    
-    
 
 @media ( max-width: 600px )
     .header__title
@@ -108,12 +191,12 @@
         line-height: 24px
     .phone
         text-align: center
-        margin-right: 70px
+        margin-right: 45px
         padding-right: 10px
     .login__header
         margin: 0
         width: 40px
-    .header__description    
+    .header__description
         display: block
         &-text
             width: 100%
@@ -125,48 +208,113 @@
         margin-top: 10px
         width: 450px
         margin-left: -200px
-        
+
+    .special__offer-box
+        min-height: 50%
+        display: block
+
 @media ( max-width: 580px )
-    .about__content-subtitle 
+
+    .about__content-subtitle
         margin-bottom: 0
-    .about__content-text 
+    .about__content-text
         margin: 0 auto
         text-align: center
         display: inline-block
+
         & p
             margin-bottom: 25px
+            width: 305px !important
+
     .how__box svg
         margin-top: 10px
         width: 400px
         margin-left: -150px
-        
+
     .about__table
         width: 375px
         &-td
             text-align: center
             padding: 0px
-    
-    @media (max-width: 502px)
-        .how__box svg
-            margin-top: 10px
+
+    .special__offer-item
+        max-width: 270px
+
+    .contacts__guarantees
+        width: 458px
+        & img
+            width: 60%
+
+    .contacts__box-text
+        font-size: 18px
+        text-align: center
+        width: 60%
+        margin-bottom: 10px
+        margin: 0 auto
+    .contacts__form
+        max-width: 300px
+        margin: 0 auto
+    .title
+        padding: 20px
+    .contacts__guarantees-text
+        width: 265px !important
+        text-align: center
+        margin: 0 auto
+    footer .footer
+        padding: 0 20px
+    .footer__menu
+        padding-left: 20px
+    .footer__links
+        padding-left: 20px
+    .footer__navbar
+        display: flex
+        justify-content: end
+        text-align: center
+
+@media (max-width: 502px)
+
+    .how__box svg
+        margin-top: 10px
+        width: 300px
+        margin-left: -100px
+    .about__table
+        width: 320px
+    .about__table-tr+.about__table-tr
+        font-size: 24px
+        line-height: 32px
+    .special__offer-item
+        max-width: 260px
+        margin: 0 auto
+    .special__offer-item:first-child
+        margin: 0 auto
+    .contacts__guarantees
+        max-width: 390px
+        &-text
             width: 300px
-            margin-left: -100px
-        .about__table 
-            width: 320px
-        .about__table-tr+.about__table-tr 
-            font-size: 24px
-            line-height: 32px
-    @media (max-width: 370px)
-        .about__table 
-            display: none
-        .how__box svg
-            max-width: 200px
-            
-    
-        
-        
-    
-        
+    .title
+        padding-bottom: 30px !important
+        width: 360px
+    .footer
+        display: block
+        &__inner
+            display: block
+            margin: 0 auto
+            width: 200px
+        &__text
+            margin-bottom: 50px
 
+@media (max-width: 370px)
+    .about__table
+        display: none
+    .how__box svg
+        max-width: 200px
+    .services__buttons
+        max-width: 269px
+    .contacts__btn
+        width: 50%
+        margin: 0 auto
+        display: flex
+        justify-content: center
 
-       
+    .contacts__guarantees
+        max-width: 250px
